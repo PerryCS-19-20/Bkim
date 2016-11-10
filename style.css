@@ -20,6 +20,18 @@ hr {
      border-width: 5px;
      border-style: dotted solid;
  }
-video
-   {
- 
+ span {
+     font-weight: bold;
+ }
+ #s1 {
+     color:red;
+ }
+ #s2 {
+     color: orange;
+ }
+ #s3 {
+     color: yellow;
+ }
+ #s4 {
+     color: #99FF00;
+ }

@@ -1,9 +1,4 @@
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
-<!doctype html>
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Breakout</title>
@@ -11,8 +6,7 @@ and open the template in the editor.
 		<script type="text/javascript" src="https://static.codehs.com/gulp/cb01b4a22ffd3971572a8a1ab9f3b7c4cb17f383/chs-js-lib/chs.js"></script>
 		<script>
                       window.onload = function() {
-// This program draws a target that follows the mouse
-var lineOne = new Line(0, 0, 0, 0);
+                var lineOne = new Line(0, 0, 0, 0);
 var lineTwo = new Line(0, 0, 0, 0);
 var HEAD_RADIUS = 35;
 var BODY_WIDTH = HEAD_RADIUS * 2;
@@ -96,11 +90,12 @@ function rectangle(centerX, centerY, color){
     body.setPosition(centerX - 35, centerY);
     body.setColor(color);
     add(body);
+}
                         if (typeof start === 'function') {
                             start();
                         }
                     };
-        </script>
+                </script>
 		<style>
 			canvas {
     				border: 1px solid black;

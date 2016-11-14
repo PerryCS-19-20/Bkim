@@ -3,22 +3,30 @@
   <head>
     <link rel = "stylesheet" type="text/css" href= "style.css">
     <title> Bailey Kim</title>
+    <script>
+        function clicked(){
+            alert("Warriors blew 3-1 lead")
+        }
+        function changeColor(colorName){
+            document.body.style.backgroundColor=colorName;
+        }
+    </script>
   </head>
   <body>
-    <h1><center> Bailey Kim</center></h1>
+      <span onmouseover="changeColor('#660066');"><h1><center>Bailey Kim</center></h1></span>
     <a href="PopUp.html"><center><img src="Lebrun.jpg"></center></a>
-      <ul>
-          <h4><span id="s1"><li>My Name is Bailey Kim</li></span></h4>
-          <h4><span id="s2"><li>I like to play video games such as CS:GO</li></span></h4>
-          <h4><span id="s3"><li>I like to watch and play sports such as basketball, football, and tennis</li></span></h4>
-      </ul>
     <hr>
-      <a href="https://codehs.com/editor/html/153972/274636/index.html"><span id="s4">My Favorite Books<span></a>
-      <a href="breakout.html"><span id="s4">Play Game</span></a>
-    <hr>
-    <center><video width="400" controls>
+      <center><a href="https://codehs.com/editor/html/153972/274636/index.html"><span id="s4" onmouseover="changeColor('green');">My Favorite Books<span></a>
+      <a href="bio.html"><span id="s4" onmouseover="changeColor('orange');">About Me</span></a>
+      <br>
+      <a href="breakout.html"><span id="s4" onmouseover="changeColor('blue');">Play Game</span></a>
+      <br>
+      <span id="s4"onclick="clicked();" onmouseover="changeColor('red');">Click here for something funny</span></center>
+     <hr>
+     <span onmouseover="changeColor('#660066');"><center><video width="400" controls>
       <source src="Preoject(1).mp4" type="video/mp4">
       <source src="Preoject_1_.ogv" type="video/ogv">
-      </video></center>
+      </video></center></span>
+    
   </body>
 </html>

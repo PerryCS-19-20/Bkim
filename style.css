@@ -11,6 +11,8 @@ ul {
     margin: 0;
     padding: 0;
     border: 10px solid #555;
+    width: 200px;
+    background-color: #00FF66;
 }
 li {
     text-align: center;
@@ -22,7 +24,7 @@ li:last-child {
 li a {
     display: block;
     width: 60px;
-    background-color:#00FFFF;
+    padding: 8px 16px;
 }
 h4 {
     font-size: 30px;

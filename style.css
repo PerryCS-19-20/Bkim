@@ -16,6 +16,9 @@ li {
     text-align: center;
     border-bottom: 1px solid #555;
 }
+li:last-child {
+    border-bottom: none;
+}
 li a {
     display: block;
     width: 60px;

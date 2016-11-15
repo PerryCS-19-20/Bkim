@@ -10,22 +10,26 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    border: 10px solid #555;
-    width: 150px;
+    overflow: hidden;
     background-color: #00FFFF;
 }
+
 li {
-    text-align: center;
-    border-bottom: 10px solid #555;
+    float: left;
 }
-li:last-child {
-    border-bottom: none;
-}
+
 li a {
     display: block;
-    width: 100px;
-    padding: 8px 16px;
+    color: #660066;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
+
+li a:hover {
+    background-color: #111;
+}
+
 h4 {
     font-size: 30px;
     font-weight: bold;
@@ -45,4 +49,7 @@ hr {
  }
  #s1 {
      color: #00FFFF;
+ }
+ #s2 {
+     color: #660066;
  }

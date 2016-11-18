@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" type="text/css" href= "style.css">
+        <title>
+           To Do List 
+        </title>
+        <meta charset ="utf-8">
+        <meta name ="viewport" content="width=device-width">
+    </head>
+    <body>
+        <textarea rows="10" cols="40"id="inputText">OogaBooga</textarea>
+        <button onclick="testHTML();">Hello</button>
+        <ul id ="listArea"></ul>
+        <script>
+            function testHTML(){
+                var things = document.getElementById("inputText");
+                var span = document.getElementById("listArea");
+                var unorderedList = document.createElement("li");
+                unorderedList.textContent = things.value;
+                span.appendChild(unorderedList);
+            }
+        </script>
+    </body>
+</html>
+

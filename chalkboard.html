@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,18 +18,20 @@
       <li><a href="todolist.html">To Do List</a></li>
       <li><a href="chalkboard.html">Chalkboard</a></li>
     </ul>
-        <textarea rows="10" cols="40"id="inputText">OogaBooga</textarea>
+        <textarea rows="10" cols="40"id="inputText"> OogaBooga</textarea>
         <button onclick="testHTML();">Hello</button>
         <ul id ="listArea"></ul>
         <script>
             function testHTML(){
+            for (var i = 0; i <100; i++){
                 var things = document.getElementById("inputText");
                 var span = document.getElementById("listArea");
                 var unorderedList = document.createElement("li");
                 unorderedList.textContent = things.value;
                 span.appendChild(unorderedList);
+                unorderedList.textContent = "I will not" + inputText.value;
             }
+        }
         </script>
     </body>
 </html>
-

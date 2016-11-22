@@ -11,10 +11,11 @@ and open the template in the editor.
         </title>   
         <style>
             td {
-                font-size: 80px;
+                font-size: 160px;
                 color: #00FFFF;
-                height: 100px;
-                width: 100px;
+                height: 200px;
+                width: 200px;
+                text-align:center;
             }
         </style>
     </head>
@@ -31,20 +32,34 @@ and open the template in the editor.
     </ul>
         <table border="10">
             <tr>
-                <td>X</td>
-                <td></td>
-                <td></td>
+                <td id="1" onclick="play('1');"></td>
+                <td id="2" onclick="play('2');"></td>
+                <td id="3" onclick="play('3');"></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td id="4" onclick="play('4');"></td>
+                <td id="5" onclick="play('5');"></td>
+                <td id="6" onclick="play('6');"></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td id="7" onclick="play('7');"></td>
+                <td id="8" onclick="play('8');"></td>
+                <td id="9" onclick="play('9');"></td>
             </tr>
         </table>
+            <script>
+                var player = "X";
+                function play(cellId) {
+                    var cell = document.getElementById(cellId);
+                    if(cell.textContent === "") {
+                        cell.textContent = player;
+                        if(player === "X") {
+                            player = "O";
+                        }else{
+                            player = "X";
+                            }
+                        }
+                }
+            </script>
     </body>
 </html>

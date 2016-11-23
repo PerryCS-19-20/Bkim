@@ -53,12 +53,34 @@ and open the template in the editor.
                     var cell = document.getElementById(cellId);
                     if(cell.textContent === "") {
                         cell.textContent = player;
-                        if(player === "X") {
-                            player = "O";
-                        }else{
-                            player = "X";
-                            }
-                        }
+                        checkWin();
+                    }
+                    if(player === "X") {
+                       player = "O";
+                    }else{
+                       player = "X";
+                    }
+             }
+                function checkWin(){
+                    checkCells("1","2","3");
+                    checkCells("4","5","6");
+                    checkCells("7","8","9");
+                    checkCells("1","4","7");
+                    checkCells("2","5","8");
+                    checkCells("3","6","9");
+                    checkCells("1","5","9");
+                    checkCells("3","5","7");
+                }
+                function checkCells(c1id,c2id,c3id) {
+                    var c1 = document.getElementById(c1id);
+                    var c2 = document.getElementById(c2id);
+                    var c3 = document.getElementById(c3id);
+                    if ((c1.textContent === c2.textContent) && (c2.textContent === c3.textContent) && (c1.textContent !== "")) {
+                        won = true;
+                        c1.style.backgroundImage= "url(giphy.gif)";
+                        c2.style.backgroundImage= "url(giphy.gif)";
+                        c3.style.backgroundImage= "url(giphy.gif)";
+                    }
                 }
             </script>
     </body>

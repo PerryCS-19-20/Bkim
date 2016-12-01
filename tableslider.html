@@ -1,7 +1,3 @@
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,20 +14,23 @@ and open the template in the editor.
             }
         </style>
     </head>
-    <body onload="buildTimesTable();">
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="breakout.html">Play Game</a></li>
-            <li><a href="htmltest.html">HTML Sandbox</a></li>
-            <li><a href="bio.html">About Me</a></li>
-            <li><a href="https://codehs.com/editor/html/153972/274636/index.html">My Favorite Books</a></li>
-            <li><a href="todolist.html">To Do List</a></li>
-            <li><a href="chalkboard.html">Chalkboard</a></li>
-            <li><a href="tictactoe.html">Tic-Tac-Toe</a></li>
-            <li><a href="timestable.html">Times Table</a></li>
-        </ul>
+     <body onload="buildTimesTable();">
+        <h1>Multiplication Table</h1>
+        Table Width:<input type="range" id="tableWidth" min="1" max="20" value="10" onchange ="buildTimesTable();"><br>
         <script>
-            function buildTimesTable(){
+            function buildTimesTable() {
+                var timesTable = document.getElementById("timesTable");
+                if (timesTable !== null) {
+                    timesTable.parentNode.removeChild(timesTable);        
+                }
+                timesTable = document.createElement("table");
+                timesTable.id = "timesTable";            
+                var body = document.body;
+                body.appendChild(timesTable);
+                var width = document.getElementById("tableWidth").value;
+
+
+                function buildTimesTable(){
                 var timesTable = document.createElement("table");
                 timesTable.id="timesTable";
                 var body=document.body;
@@ -59,7 +58,8 @@ and open the template in the editor.
                  }
            }
        }
-    </script>
-    <h1>You Have To Do the Math</h1>
+   }
+        </script>
     </body>
+
 </html>

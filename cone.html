@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel = "stylesheet" type="text/css" href= "style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Cone Calc</title>
+        <script>
+            function calc() {
+                var h = parseFloat(document.getElementById("height").value);
+                var r = parseFloat(document.getElementById("rad").value);
+                var vol = document.getElementById("vol");
+
+
+                var area = ((1/3)* Math.PI * r * r);          // Calculate area of bottom circle
+                vol.value = (area * h).toFixed(2);   // Show volume of cylinder to 2 decimal places
+            }
+        </script>
+        <style>
+            input[type=number] {
+                width: 64px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Cone volume:</h1>
+        <img src="data:image/png;base64,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" style="float: left; height: 150px; margin-right: 5px;">
+        <h2>v = 1/3 h &pi; r <sup>2</sup></h2>
+        
+        h: <input type="number" id="height" placeholder="height"><br>
+        r: <input type="number" id="rad" placeholder="radius">
+        <button onclick="calc();">Calculate</button>
+        <hr>
+        v: <input type="output" id="vol" placeholder="volume" readonly>
+    </body>
+</html>

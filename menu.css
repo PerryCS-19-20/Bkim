@@ -1,0 +1,30 @@
+body {
+          background-color: #DC143C;
+          color: #00FFFF;
+          font-family: Impact;
+ }
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00FFFF;
+}
+
+ul li {
+    float: left;
+    font-family: Impact;
+}
+
+ul li a {
+    display: block;
+    color: #660066;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #F08080;
+}
+

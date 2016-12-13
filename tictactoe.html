@@ -6,6 +6,7 @@ and open the template in the editor.
 <html>
     <head>
         <link rel = "stylesheet" type="text/css" href= "style.css">
+        <link rel = "stylesheet" type="text/css" href= "menu.css">
         <title>
            Tic-Tac-Toe 
         </title>   
@@ -18,8 +19,11 @@ and open the template in the editor.
                 text-align:center;
             }
         </style>
+    <script src="sitemap.js"></script>
     </head>
-    <body>
+    <body onload="buildMap('sitemapwrapper');">
+        <div id="sitemapwrapper"></div>
+        <hr>
         <table border="10">
             <tr>
                 <td id="1" onclick="play('1');"></td>

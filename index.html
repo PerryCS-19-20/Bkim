@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel = "stylesheet" type="text/css" href= "style.css">
+    <link rel = "stylesheet" type="text/css" href= "menu.css">
     <title> Bailey Kim</title>
     <script>
         function clicked(){
@@ -11,15 +12,10 @@
             document.body.style.backgroundColor=colorName;
         }
     </script>
-  </head>
-  <body>
-    <ul class="navbar">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="breakout.html">Play Game</a></li>
-      <li><a href="bio.html">About Me</a></li>
-      <li><a href="classstuff.html">Class Stuff</a></li>
-      <li><a href="sitemap.html">Site Map</a></li>
-    </ul>
+    <script src="sitemap.js"></script>
+    </head>
+    <body onload="buildMap('sitemapwrapper');">
+        <div id="sitemapwrapper"></div>
      <hr>
     <span onmouseover="changeColor('#DC143C');"><h1><center>Bailey Kim</center></h1></span>
     <a href="PopUp.html"><center><img src="Lebrun.jpg"></center></a>

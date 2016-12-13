@@ -8,30 +8,6 @@ h1 {
     font-family: Impact;
     color: #00FFFF;
  }
-ul.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #00FFFF;
-}
-
-ul.navbar li {
-    float: left;
-    font-family: Impact;
-}
-
-ul.navbar li a {
-    display: block;
-    color: #660066;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-ul.navbar li a:hover {
-    background-color: #F08080;
-}
 h4 {
     font-size: 30px;
     font-weight: bold;

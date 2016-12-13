@@ -3,28 +3,63 @@ body {
           color: #00FFFF;
           font-family: Impact;
  }
- ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #00FFFF;
+ #sitemapwrapper {
+	position: relative;
+	padding: 8px;
+	display: block;
+        background-color: #00FFFF;
 }
 
-ul li {
-    float: left;
-    font-family: Impact;
+
+/* class on a list that makes up the menu */
+#sitemapwrapper > ul {
+	position: relative;
+	display:  inline-block;
+	text-decoration: none;
+	list-style-type: none;
+        margin: 0;
+        padding: 0;
 }
 
-ul li a {
-    display: block;
-    color: #660066;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+
+/* top-level menu as a bar across page */
+#sitemapwrapper > ul > li {
+    display: inline-block;
+    padding: 0px;
 }
 
-ul li a:hover {
-    background-color: #F08080;
+
+/* no bullets on menu items */ 
+#sitemapwrapper ul li {
+	list-style: none;
+        text-indent: 0px;
+        color:black;
+}
+#sitemapwrapper ul ul {
+	display: none;
+	position: absolute;
+        background-color: #00FFFF;
+        padding: 0px;
 }
 
+
+/* Show dropdown when hovering over its menu */
+#sitemapwrapper ul li:hover ul,
+#sitemapwrapper ul li:focus ul,
+#sitemapwrapper ul li:active ul {
+	display: block;
+       
+}
+
+
+#sitemapwrapper a {
+	display: block;
+        color: black;
+	padding: 8px;
+	text-decoration: none;  
+}
+
+#sitemapwrapper ul ul li a:hover {
+	background-color: red;
+	color: black;
+}

@@ -3,13 +3,17 @@
 <html>
     <head>
         <link rel = "stylesheet" type="text/css" href= "style.css">
+        <link rel = "stylesheet" type="text/css" href= "menu.css">
         <title>
            To Do List 
         </title>
         <meta charset ="utf-8">
         <meta name ="viewport" content="width=device-width">
+    <script src="sitemap.js"></script>
     </head>
-    <body>
+    <body onload="buildMap('sitemapwrapper');">
+        <div id="sitemapwrapper"></div>
+        <hr>
         <textarea rows="10" cols="40"id="inputText">OogaBooga</textarea>
         <button onclick="testHTML();">Hello</button>
         <ul id ="listArea"></ul>
